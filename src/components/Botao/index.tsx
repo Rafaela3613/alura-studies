@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
 
 class Botao extends React.Component {
     render() {
-     return (
-        <button>
-          Botão
-        </button>
-      )
-   }
-  }
-  
+        const estaAtivo = true;
+        const styles = {
+          backgroundColor: estaAtivo ? "purple" : "red"
+        }
+      
+        return (
+            <button style={styles}>
+                Botão
+            </button>
+        )
+    }
+}
+
 export default Botao;
